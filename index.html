@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="expect.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/j.png" type="image/x-icon">
+    
+</head>
+<body>
+    <header>
+        <a href="#"><span>Jancel.</span>Codemy</a>
+        <nav>
+            <ul>
+                <li><a href="#about">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h1>The Future of Tech Starts Here!</h1>
+                <p> Join our community of coders and learn to build innovative solutions with our programming lessons.</p>
+                <!-- <input type="button" value="login"> -->
+                <form class="btn-container" action="mailto:peraltajancel@gmail.com">
+                    <button class="button" role="button">enroll now!</button>
+                    <!-- <button class="no">NO</button> -->
+                </form>
+            </div>
+            <div class="eme">
+                <div id="skills" class="tab-pane">
+                    <div class="skills-container">
+                        <img src="images/html5.png" alt="">
+                    </div>
+                    <div class="skills-container">
+                        <img src="images/css.png" alt="">
+                    </div>
+                    <div class="skills-container">
+                        <img src="images/js.png" alt="">
+                    </div>
+                    <div class="skills-container">
+                        <img src="images/python.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+           <div class="mySlides" id="about-slide-1">
+               <h1>Why Choose Us?</h1>
+               <p>At <a href="#"><span>Jancel.</span>Codemy</a>, we're reshaping online education to better suit your life and career ambitions.</p>
+               <p>With two different learning formats, you'll find the flexibility and affordability you need to fit education into your life. Because you deseve to live, and learn.</p>
+           </div>
+
+
+           <div class="mySlides" id="about-slide-2">
+                <h2>Work on some project</h2>
+                <section class="cards-wrapper">
+                    <div class="card-grid-space">
+                        <!-- <div class="num">01</div> -->
+                        <a id="socmed" class="card" href="https://janjancel.github.io/T10v.2/" target="_blank">
+                            <div>
+                            <div class="tags">
+                                <h2 class="tag">Socmed Manager</h2>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-grid-space">
+                        <!-- <div class="num">02</div> -->
+                        <a id="calcu" class="card" href="https://janjancel.github.io/IPT101-Calculator-App/" target="_blank">
+                            <div>
+                            <div class="tags">
+                                <h2 class="tag">Calculator</h2>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-grid-space">
+                        <!-- <div class="num">03</div> -->
+                        <a id="game" class="card" href="https://janjancel.github.io/rock.paper.scissors-game/" target="_blank">
+                            <div>
+                            <div class="tags">
+                                <h2 class="tag">Rock Paper Scissor Game</h2>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            
+            </div>
+
+           <span id="btn-container">
+                <button id="left-btn" onclick="plusDivs(-1)" class="button">&#10094;</button>
+                <button id="right-btn" onclick="plusDivs(+1)" class="button">&#10095;</button>
+           </span>
+        </section>
+        <section id="expect">
+            <div id="expect-container">
+               <div class="left">
+                    <h1>What to Expect from us?</h1>
+                    <ul>
+                        <li>Flexible and affordabe learning formats-like FlexPath</li>
+                        <li>A degree from an accredited university respected by employers</li>
+                        <li>Skills and expertise that can immediately apply to your career</li>
+                        <li>Faculty who are distinguished leaders in their field</li>
+                        <li>A direct path to your career-no wasted time: money or effort</li>
+                    </ul>
+                    <h1 id="support">Support at Every Step</h1>
+                    <p>Our faculty and staff will be right there with you every step of the way- </p>
+                    <p>from the admissions process until after graduation-</p>
+                    <p>to help you reach your potential and advance your career.</p>
+               </div>
+               <div class="right">
+                    <h1>Request More Information</h1>
+                    <p>Want to know more? Complete the form for detailed information on</p>
+                    <p>your program, including courses, the application process, and</p>
+                    <p>tuition, and financial aid details.</p>
+                    <form action="mailto:peraltajancel@gmail.com" id="fields">
+                        <p id="fields-required">All fields required.</p>
+                        <hr>
+                        <input type="text" name="" id="" placeholder="Degree" class="input">
+                        <input type="text" name="" id="" placeholder="Area of study" class="input">
+                        <input type="text" name="" id="" placeholder="Specializaiton" class="input">
+                        <input type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')">                        
+                        <span>
+                            <input type="text" name="" id="first-name" placeholder="first name" class="input">
+                            <input type="text" name="" id="last-name" placeholder="last name" class="input">
+                        </span>
+                        <input type="email" name="" id="" placeholder="email" class="input">
+                        <span>
+                            <input type="number" name="" id="number" placeholder="phone number" class="input">
+                            <input type="number" name="" id="zip" placeholder="ZIP code" class="input">
+                        </span>
+                        <span>
+                            <button class="button" role="button">Request</button>
+                        </span>
+                    </form>
+               </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>all rights reserved 2024</p>
+            <p>created by: <em>Jancel C. Peralta</em></p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
